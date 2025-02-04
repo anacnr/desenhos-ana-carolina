@@ -7,7 +7,7 @@ html, body{
 }
 
 body{
-    background-color: rgba(240, 239, 213, 0.128);
+    background-color: rgba(240, 239, 213, 0.128); cursor: context-menu;
 }
 
 header{
@@ -84,7 +84,7 @@ input::-webkit-inner-spin-button{
     }
 
     h3{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 5dvi; text-align: center; margin-top: 25%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 5dvi; text-align: center; margin-top: 25%; text-transform: uppercase;
     }
 
     section {
@@ -96,7 +96,11 @@ input::-webkit-inner-spin-button{
     }
 
     section > #div-img{
-        flex-basis: 100px; flex-shrink: 2; flex-grow: 2; border: 1px solid green; 
+        flex-basis: 100px; flex-shrink: 2; flex-grow: 2; border: 1px solid green; justify-content: center; align-items: center;
+    }
+
+    section > #div-img > img {
+        width: 100%; filter:drop-shadow(2px 2px 10px black); border-radius: 3%;
     }
 
     section > #aside-origin{
@@ -108,16 +112,28 @@ input::-webkit-inner-spin-button{
         display: flex; justify-content: space-around; margin: 15% 0%;
     }
 
-    #div-pages > #arrow-left{
-        position: absolute; transform: translateX(-15vw);
+    #div-pages > a{
+        text-decoration: none; color: black; 
+    }
+
+    #div-pages > a > #arrow-left{
+        position: absolute; transform: translateX(12vw);
+    }
+
+    #div-pages > a > #arrow-left:hover{
+        cursor: pointer;
     }
 
     #div-pages > #p-page{
         position: absolute; transform: translateX(-3vw); background-color: rgb(200, 151, 199); padding: 0px 5px; border-radius: 50%; cursor: context-menu;
     }
 
-    #div-pages > #arrow-right{
-        position: absolute; transform: translateX(10vw);
+    #div-pages > a >#arrow-right{
+        position: absolute; transform: translateX(-20vw);
+    }
+
+    #div-pages > a > #arrow-right:hover{
+        cursor: pointer;
     }
 
     footer{
