@@ -40,15 +40,15 @@ input::-webkit-inner-spin-button{
     }
 
     header > #div-titles{
-    display: flex; /*border: 2px solid rgb(45, 246, 5);*/ justify-content: space-around; padding-top: 10%; padding-bottom: 10%; cursor: context-menu;
+    display: flex; justify-content: space-around; padding-top: 5%; padding-bottom: 5%; cursor: context-menu;
     }
 
     #div-titles > #span-draw > h1{
-    color: rgb(245, 237, 237); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 5dvi; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: wavy; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 3px black;
+    color: rgb(245, 237, 237); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 4dvi; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: wavy; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 3px black;
     }
 
     #div-titles > #span-artist > h1{
-    color: rgb(240, 134, 217); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 5dvi; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: solid; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 6px rgb(7, 0, 0);
+    color: rgb(240, 134, 217); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 4dvi; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: solid; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 6px rgb(7, 0, 0);
     }
 
     #span-h2{

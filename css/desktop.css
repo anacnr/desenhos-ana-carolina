@@ -41,15 +41,15 @@ header > #div-imgs{
     }
 
     header > #div-titles{
-    display: flex; justify-content: space-around; padding-top: 10%; padding-bottom: 10%; cursor: context-menu;
+    display: flex; justify-content: space-around; padding-top: 10px; padding-bottom: 10px; cursor: context-menu;
     }
 
     #div-titles > #span-draw > h1{
-    color: rgb(245, 237, 237); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 2rem; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: wavy; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 3px black;
+    color: rgb(245, 237, 237); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 1.5rem; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: wavy; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 3px black;
     }
 
     #div-titles > #span-artist > h1{
-    color: rgb(240, 134, 217); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 2rem; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: solid; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 6px rgb(7, 0, 0);
+    color: rgb(240, 134, 217); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 1.5rem; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: solid; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 6px rgb(7, 0, 0);
     }
 
     #span-h2{
@@ -169,7 +169,7 @@ header > #div-imgs{
     }
 
     header > #div-titles{
-    display: flex; justify-content: space-around; padding-top: 10%; padding-bottom: 10%; cursor: context-menu;
+    display: flex; justify-content: space-around; padding-top: 10px; padding-bottom: 10px; cursor: context-menu;
     }
 
     #div-titles > #span-draw > h1{
@@ -285,19 +285,19 @@ header > #div-imgs{
 }
         
     header > #div-imgs > #sunny{
-    font-size: 6dvi; position: absolute; transform: translate(-40vw,-2vh);
+    font-size: 2em; position: absolute; transform: translate(-40vw,-2vh);
     }
 
     header > #div-imgs > #cloud{
-        font-size: 5dvi;
+        font-size: 2em;
     }
 
     header > #div-imgs > #cloudy{
-        font-size: 5dvi;
+        font-size: 2em;
     }
 
     header > #div-titles{
-    display: flex; justify-content: space-around; padding-top: 10%; padding-bottom: 10%; cursor: context-menu;
+    display: flex; justify-content: space-around; padding-top: 15px; padding-bottom: 15px; cursor: context-menu;
     }
 
     #div-titles > #span-draw > h1{
