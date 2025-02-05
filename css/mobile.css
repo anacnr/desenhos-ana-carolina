@@ -56,7 +56,7 @@ input::-webkit-inner-spin-button{
     }
 
     #span-h2 > h2{
-        color: rgb(12, 0, 10); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 4dvi; font-style: oblique; letter-spacing: 2px; text-shadow: 1px 1px 4px rgba(167, 98, 98, 0.84); padding: 10%;
+        color: rgb(12, 0, 10); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 4dvi; font-style: oblique; letter-spacing: 2px; text-shadow: 1px 1px 4px rgba(167, 98, 98, 0.84); padding: 8% 6% 6%;
     }
 
     #span-search{
@@ -84,7 +84,7 @@ input::-webkit-inner-spin-button{
     }
 
     h3{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 5dvi; text-align: center; margin-top: 25%; text-transform: uppercase;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 5dvi; text-align: center; margin-top: 20%; position: relative; top: 3%; text-transform: uppercase;
     }
 
     section {
