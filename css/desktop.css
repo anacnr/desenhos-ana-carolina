@@ -2,12 +2,20 @@
 
 * {margin: 0%; padding: 0px; box-sizing: border-box;}
 
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
 html, body{
     width: 100vw; height: 100vh;
 }
 
+:root{
+--font : 'Lora' , sans-serif;
+--color_font_footer : rgb(240, 220, 212);
+--text_shadow : 1px 1px 6px rgb(172, 128, 128);
+}
+
 body{
-    background-color: rgba(240, 239, 213, 0.128); cursor: context-menu;
+    background-color: rgba(240, 239, 213, 0.128); cursor: context-menu; font-family: var(--font);
 }
 
 input:focus{
@@ -16,6 +24,10 @@ input:focus{
     
 input::-webkit-inner-spin-button{
     -webkit-appearance: none;
+}
+
+#aside-descr > #description > p, #aside-origin > #origin> p {
+    text-shadow: var(--text_shadow); letter-spacing: 1px;
 }
 
 @media (min-width:600px) and (max-width:768px) {
@@ -45,11 +57,11 @@ header > #div-imgs{
     }
 
     #div-titles > #span-draw > h1{
-    color: rgb(245, 237, 237); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 1.5rem; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: wavy; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 3px black;
+    color: rgb(245, 237, 237); font-size: 1.5rem; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: wavy; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 3px black;
     }
 
     #div-titles > #span-artist > h1{
-    color: rgb(240, 134, 217); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 1.5rem; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: solid; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 6px rgb(7, 0, 0);
+    color: rgb(240, 134, 217);font-size: 1.5rem; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: solid; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 6px rgb(7, 0, 0);
     }
 
     #span-h2{
@@ -57,7 +69,7 @@ header > #div-imgs{
     }
 
     #span-h2 > h2{
-        color: rgb(12, 0, 10); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 4dvi; font-style: oblique; letter-spacing: 2px; text-shadow: 1px 1px 4px rgba(167, 98, 98, 0.84); padding: 6%;
+        color: rgb(12, 0, 10); font-size: 4dvi; font-style: oblique; letter-spacing: 2px; text-shadow: 1px 1px 4px rgba(167, 98, 98, 0.84); padding: 6%;
     }
 
     #span-search{
@@ -65,7 +77,7 @@ header > #div-imgs{
     }
 
     #span-search > label{
-    color: rgb(12, 0, 10); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 3dvi; padding-right: 10px; 
+    color: rgb(12, 0, 10); font-size: 3dvi; padding-right: 10px; 
     }
 
     #span-search > #span-input > #input-year{
@@ -85,7 +97,7 @@ header > #div-imgs{
     }
 
     h3{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 2rem; text-align: center; margin-top: 18%; text-transform: uppercase; position: relative; top: 4%;
+        font-size: 2rem; text-align: center; margin-top: 18%; text-transform: uppercase; position: relative; top: 4%;
     }
 
     section {
@@ -93,7 +105,11 @@ header > #div-imgs{
     }
 
     section > #aside-descr{
-        flex-basis: 120px; flex-shrink: 1; flex-grow: 1; border:1px solid red; padding: 20px;
+        border:1px solid red; display: flex; justify-content: center; align-items: center; 
+    }
+
+    section > #aside-descr > #description{
+        flex-basis: 60%;
     }
 
     section > #div-img{
@@ -105,7 +121,11 @@ header > #div-imgs{
     }
 
     section > #aside-origin{
-        flex-basis: 50px; flex-shrink: 1; flex-grow: 1; padding: 10px; border:1px solid red;
+        border:1px solid red; display: flex; justify-content: center; align-items: center; 
+    }
+
+    section > #aside-origin > #origin{
+        flex-basis: 60%;
     }
 
     #pages-adjuste{
@@ -145,7 +165,7 @@ header > #div-imgs{
     }
 
     footer > h4{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 3dvi; font-style: oblique; letter-spacing: 2px;
+    font-size: 3dvi; font-style: oblique; letter-spacing: 2px; text-shadow: var(--text_shadow); color: var(--color_font_footer);
     }
 }
 
@@ -176,11 +196,11 @@ header > #div-imgs{
     }
 
     #div-titles > #span-draw > h1{
-    color: rgb(245, 237, 237); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 2rem; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: wavy; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 3px black;
+    color: rgb(245, 237, 237); font-size: 2rem; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: wavy; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 3px black;
     }
 
     #div-titles > #span-artist > h1{
-    color: rgb(240, 134, 217); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 2rem; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: solid; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 6px rgb(7, 0, 0);
+    color: rgb(240, 134, 217); font-size: 2rem; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: solid; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 6px rgb(7, 0, 0);
     }
 
     #span-h2{
@@ -188,7 +208,7 @@ header > #div-imgs{
     }
 
     #span-h2 > h2{
-        color: rgb(12, 0, 10); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 2rem; font-style: oblique; letter-spacing: 2px; text-shadow: 1px 1px 4px rgba(167, 98, 98, 0.84); padding: 6%;
+        color: rgb(12, 0, 10); font-size: 2rem; font-style: oblique; letter-spacing: 2px; text-shadow: 1px 1px 4px rgba(167, 98, 98, 0.84); padding: 6%;
     }
 
     #span-search{
@@ -196,7 +216,7 @@ header > #div-imgs{
     }
 
     #span-search > label{
-    color: rgb(12, 0, 10); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 1.5rem; padding-right: 10px; 
+    color: rgb(12, 0, 10); font-size: 1.5rem; padding-right: 10px; 
     }
 
     #span-search > #span-input > #input-year{
@@ -216,15 +236,19 @@ header > #div-imgs{
     }
 
     h3{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 2rem; text-align: center; margin-top: 50px; padding-top: 50px; position: relative; top: 5%; text-transform: uppercase;
+        font-size: 2rem; text-align: center; margin-top: 50px; padding-top: 50px; position: relative; top: 5%; text-transform: uppercase;
     }
 
     section {
-        border: 2px solid black; display: flex; flex-flow: column wrap; margin-top: 13%; margin-bottom: 8%; padding: 0px 10px; 
+        border: 2px solid black; display: flex; flex-flow: column wrap; margin-top: 13%; margin-bottom: 8%;
     }
 
     section > #aside-descr{
-        flex-basis: 120px; flex-shrink: 1; flex-grow: 1; border:1px solid red; padding: 20px;
+        border:1px solid red; display: flex; justify-content: center; align-items: center; 
+    }
+
+    section > #aside-descr > #description{
+        flex-basis: 55%;
     }
 
     section > #div-img{
@@ -236,7 +260,11 @@ header > #div-imgs{
     }
 
     section > #aside-origin{
-        flex-basis: 50px; flex-shrink: 1; flex-grow: 1; padding: 10px; border:1px solid red;
+        border:1px solid red; display: flex; justify-content: center; align-items: center; 
+    }
+
+    section > #aside-origin > #origin{
+        flex-basis: 55%;
     }
 
     #pages-adjuste{
@@ -276,7 +304,7 @@ header > #div-imgs{
     }
 
     footer > h4{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 2em; font-style: oblique; letter-spacing: 2px;
+     font-size: 2em; font-style: oblique; letter-spacing: 2px; text-shadow: var(--text_shadow); color: var(--color_font_footer);
     }
 }
 
@@ -307,11 +335,11 @@ header > #div-imgs{
     }
 
     #div-titles > #span-draw > h1{
-    color: rgb(245, 237, 237); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 2rem; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: wavy; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 3px black;
+    color: rgb(245, 237, 237); font-size: 2rem; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: wavy; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 3px black;
     }
 
     #div-titles > #span-artist > h1{
-    color: rgb(240, 134, 217); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 2rem; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: solid; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 6px rgb(7, 0, 0);
+    color: rgb(240, 134, 217); font-size: 2rem; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: solid; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 6px rgb(7, 0, 0);
     }
 
     #span-h2{
@@ -319,7 +347,7 @@ header > #div-imgs{
     }
 
     #span-h2 > h2{
-        color: rgb(12, 0, 10); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 2rem; font-style: oblique; letter-spacing: 2px; text-shadow: 1px 1px 4px rgba(167, 98, 98, 0.84); padding: 6%;
+        color: rgb(12, 0, 10); font-size: 2rem; font-style: oblique; letter-spacing: 2px; text-shadow: 1px 1px 4px rgba(167, 98, 98, 0.84); padding: 6%;
     }
 
     #span-search{
@@ -327,7 +355,7 @@ header > #div-imgs{
     }
 
     #span-search > label{
-    color: rgb(12, 0, 10); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 1.5rem; padding-right: 10px; 
+    color: rgb(12, 0, 10); font-size: 1.5rem; padding-right: 10px; 
     }
 
     #span-search > #span-input > #input-year{
@@ -347,7 +375,7 @@ header > #div-imgs{
     }
 
     h3{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 2rem; text-align: center; margin-top: 40px; padding-top: 40px;text-transform: uppercase; position: static; transform: translateY(10vh);
+        font-size: 2rem; text-align: center; margin-top: 40px; padding-top: 40px;text-transform: uppercase; position: static; transform: translateY(10vh);
     }
 
     section {
@@ -355,7 +383,11 @@ header > #div-imgs{
     }
 
     section > #aside-descr{
-        flex-basis: 120px; flex-shrink: 1; flex-grow: 1; border:1px solid red; padding: 20px;
+        border:1px solid red; display: flex; justify-content: center; align-items: center; 
+    }
+
+    section > #aside-descr > #description{
+        flex-basis: 50%;
     }
 
     section > #div-img{
@@ -367,7 +399,11 @@ header > #div-imgs{
     }
 
     section > #aside-origin{
-        flex-basis: 50px; flex-shrink: 1; flex-grow: 1; padding: 10px; border:1px solid red;
+       border:1px solid red; display: flex; justify-content: center; align-items: center; 
+    }
+
+    section > #aside-origin > #origin {
+        flex-basis: 50%;
     }
 
     #pages-adjuste{
@@ -407,6 +443,6 @@ header > #div-imgs{
     }
 
     footer > h4{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 2em; font-style: oblique; letter-spacing: 2px;
+     font-size: 2em; font-style: oblique; letter-spacing: 2px; text-shadow: var(--text_shadow); color: var(--color_font_footer);
     }
 }

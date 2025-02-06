@@ -2,12 +2,20 @@
 
 * {margin: 0%; padding: 0px; box-sizing: border-box;}
 
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root{
+--font : 'Lora' , sans-serif;
+--color_font_footer : rgb(240, 220, 212);
+--text_shadow : 1px 1px 6px rgb(172, 128, 128);
+}
+
 html, body{
     width: 100vw; height: 100vh;
 }
 
 body{
-    background-color: rgba(240, 239, 213, 0.128); cursor: context-menu;
+    background-color: rgba(240, 239, 213, 0.128); cursor: context-menu; font-family: var(--font);
 }
 
 header{
@@ -44,11 +52,11 @@ input::-webkit-inner-spin-button{
     }
 
     #div-titles > #span-draw > h1{
-    color: rgb(245, 237, 237); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 4dvi; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: wavy; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 3px black;
+    color: rgb(245, 237, 237); font-size: 4dvi; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: wavy; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 3px black;
     }
 
     #div-titles > #span-artist > h1{
-    color: rgb(240, 134, 217); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 4dvi; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: solid; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 6px rgb(7, 0, 0);
+    color: rgb(240, 134, 217); font-size: 4dvi; font-style: oblique; letter-spacing: 2px; text-decoration-line: underline; text-decoration-style: solid; text-decoration-thickness: 2px; text-underline-offset: 8px; text-shadow: 1px 1px 6px rgb(7, 0, 0);
     }
 
     #span-h2{
@@ -56,15 +64,15 @@ input::-webkit-inner-spin-button{
     }
 
     #span-h2 > h2{
-        color: rgb(12, 0, 10); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 4dvi; font-style: oblique; letter-spacing: 2px; text-shadow: 1px 1px 4px rgba(167, 98, 98, 0.84); padding: 8% 6% 6%;
+        color: rgb(12, 0, 10); font-size: 4dvi; font-style: oblique; letter-spacing: 2px; text-shadow: 1px 1px 4px rgba(167, 98, 98, 0.84); padding: 8% 6% 6%;
     }
 
     #span-search{
-        position: absolute; transform: translate(50vw, 6vh); display: flex; justify-content:space-between;
+        position: absolute; transform: translate(45vw, 6vh); display: flex; justify-content:space-between;
     }
 
     #span-search > label{
-    color: rgb(12, 0, 10); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 3dvi; padding-right: 10px; 
+    color: rgb(12, 0, 10); font-size: 3dvi; padding-right: 10px; 
     }
 
     #span-search > #span-input > #input-year{
@@ -84,15 +92,22 @@ input::-webkit-inner-spin-button{
     }
 
     h3{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 5dvi; text-align: center; margin-top: 20%; position: relative; top: 3%; text-transform: uppercase;
+       font-size: 5dvi; text-align: center; margin-top: 20%; position: relative; top: 3%; text-transform: uppercase;
     }
 
     section {
-        border: 2px solid black; display: flex; flex-flow: column wrap; margin-top: 15%; margin-bottom: 10%; padding: 0px 10px;
+        border: 2px solid black; display: flex; flex-flow: column wrap; margin-top: 15%; margin-bottom: 10%; 
+    }
+    section > #aside-descr{
+        border:1px solid red; display: flex; justify-content: center; align-items: center; 
     }
 
-    section > #aside-descr{
-        flex-basis: 50px; flex-shrink: 1; flex-grow: 1; border:1px solid red; padding: 5px;
+    section > #aside-descr > #description{
+        flex-basis: 65%;
+    }
+
+    #aside-descr > #description > p, #aside-origin > #origin> p {
+        text-shadow: var(--text_shadow); letter-spacing: 1px;
     }
 
     section > #div-img{
@@ -104,7 +119,11 @@ input::-webkit-inner-spin-button{
     }
 
     section > #aside-origin{
-        flex-basis: 50px; flex-shrink: 1; flex-grow: 1; padding: 10px; border:1px solid red;
+        border:1px solid red; display: flex; justify-content: center; align-items: center; 
+    }
+
+    section > #aside-origin > #origin{
+        flex-basis: 65%;
     }
 
     #pages-adjuste{
@@ -136,7 +155,7 @@ input::-webkit-inner-spin-button{
     }
 
     footer > h4{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 3dvi; font-style: oblique; letter-spacing: 2px;
+        font-size: 3dvi; font-style: oblique; letter-spacing: 2px; color: var(--color_font_footer);  text-shadow: var(--text_shadow);
     }
 
 }
