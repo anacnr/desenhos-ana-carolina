@@ -53,7 +53,7 @@ header > #div-imgs{
     }
 
     header > #div-titles{
-    display: flex; justify-content: space-around; padding-top: 10px; padding-bottom: 10px; cursor: context-menu;
+    display: flex; justify-content: space-around; padding-top: 25px; padding-bottom: 25px; cursor: context-menu;
     }
 
     #div-titles > #span-draw > h1{
@@ -69,11 +69,11 @@ header > #div-imgs{
     }
 
     #span-h2 > h2{
-        color: rgb(12, 0, 10); font-size: 4dvi; font-style: oblique; letter-spacing: 2px; text-shadow: 1px 1px 4px rgba(167, 98, 98, 0.84); padding: 6%;
+        color: rgb(12, 0, 10); font-size: 4dvi; font-style: oblique; letter-spacing: 2px; text-shadow: 1px 1px 4px rgba(167, 98, 98, 0.84); padding: 60px;
     }
 
     #span-search{
-        position: absolute; transform: translate(50vw, 6vh); display: flex; justify-content:space-between;
+     display: flex; justify-content:flex-end; align-items: center; flex-flow: row wrap; border: 1px solid red; margin-top: 25px;
     }
 
     #span-search > label{
@@ -81,7 +81,7 @@ header > #div-imgs{
     }
 
     #span-search > #span-input > #input-year{
-        width: 120px; border: none; background-color: rgba(128, 128, 128, 0.475); border-radius: 10px; 
+        width: 100%; border: none; background-color: rgba(128, 128, 128, 0.475); border-radius: 10px; flex: 0 1 120px; padding-top: 1px;
     }
 
     #span-search > #span-input > #bloom{
@@ -89,15 +89,15 @@ header > #div-imgs{
     }
 
     #span-search > #span-input{
-        box-shadow: 2px 2px 6px black; border-radius: 10px; display: flex; background-color: transparent; padding-right: 3px;
+        box-shadow: 2px 2px 6px black; border-radius: 10px; display: flex; background-color: transparent; padding-right: 3px; width: 125px; margin-right: 10%;
     }
 
     #first-hr{
-        position: relative; transform: translateY(10vh); 
+        position: relative; transform: translateY(35px); 
     }
 
     h3{
-        font-size: 2rem; text-align: center; margin-top: 18%; text-transform: uppercase; position: relative; top: 4%;
+        font-size: 2rem; text-align: center; margin-top: 90px; text-transform: uppercase; position: relative; top: 3%;
     }
 
     section {
@@ -192,7 +192,7 @@ header > #div-imgs{
     }
 
     header > #div-titles{
-    display: flex; justify-content: space-around; padding-top: 10px; padding-bottom: 10px; cursor: context-menu;
+    display: flex; justify-content: space-around; padding-top: 25px; padding-bottom: 25px; cursor: context-menu; 
     }
 
     #div-titles > #span-draw > h1{
@@ -208,11 +208,11 @@ header > #div-imgs{
     }
 
     #span-h2 > h2{
-        color: rgb(12, 0, 10); font-size: 2rem; font-style: oblique; letter-spacing: 2px; text-shadow: 1px 1px 4px rgba(167, 98, 98, 0.84); padding: 6%;
+        color: rgb(12, 0, 10); font-size: 2rem; font-style: oblique; letter-spacing: 2px; text-shadow: 1px 1px 4px rgba(167, 98, 98, 0.84); padding: 60px;
     }
 
     #span-search{
-        position: absolute; transform: translate(55vw, 5vh); display: flex; justify-content:space-between;
+        display: flex; justify-content:flex-end; align-items: center; flex-flow: row nowrap; margin-top: 25px;
     }
 
     #span-search > label{
@@ -220,7 +220,7 @@ header > #div-imgs{
     }
 
     #span-search > #span-input > #input-year{
-        width: 120px; border: none; background-color: rgba(128, 128, 128, 0.475); border-radius: 10px;
+        width: 120px; border: none; background-color: rgba(128, 128, 128, 0.475); border-radius: 10px; flex: 0 1 120px; margin-right: 90px;
     }
 
     #span-search > #span-input > #bloom{
@@ -228,19 +228,19 @@ header > #div-imgs{
     }
 
     #span-search > #span-input{
-        box-shadow: 2px 2px 6px black; border-radius: 10px; display: flex; background-color: transparent; padding-right: 3px;
+        box-shadow: 2px 2px 6px black; border-radius: 10px; display: flex; background-color: transparent; padding-right: 3px; width: 125px; height: 20px;
     }
 
     #first-hr{
-        position: relative; transform: translateY(10vh); 
+        position: relative; transform: translateY(35px); 
     }
 
     h3{
-        font-size: 2rem; text-align: center; margin-top: 50px; padding-top: 50px; position: relative; top: 5%; text-transform: uppercase;
+        font-size: 2rem; text-align: center; margin-top: 90px; position: relative; top: 3%; text-transform: uppercase;
     }
 
     section {
-        border: 2px solid black; display: flex; flex-flow: column wrap; margin-top: 13%; margin-bottom: 8%;
+        border: 2px solid black; display: flex; flex-flow: column wrap; margin-top: 110px; margin-bottom: 60px;
     }
 
     section > #aside-descr{
@@ -331,7 +331,7 @@ header > #div-imgs{
     }
 
     header > #div-titles{
-    display: flex; justify-content: space-around; padding-top: 15px; padding-bottom: 15px; cursor: context-menu;
+    display: flex; justify-content: space-around; padding-top: 25px; padding-bottom: 25px; cursor: context-menu;
     }
 
     #div-titles > #span-draw > h1{
@@ -351,7 +351,7 @@ header > #div-imgs{
     }
 
     #span-search{
-        position: absolute; transform: translate(55vw, 5vh); display: flex; justify-content:space-between;
+        display: flex; justify-content:flex-end; align-items: center; flex-flow: row nowrap; margin-top: 25px;
     }
 
     #span-search > label{
@@ -359,7 +359,7 @@ header > #div-imgs{
     }
 
     #span-search > #span-input > #input-year{
-        width: 120px; border: none; background-color: rgba(128, 128, 128, 0.475); border-radius: 10px;
+        width: 120px; border: none; background-color: rgba(128, 128, 128, 0.475); border-radius: 10px; flex: 0 1 120px; margin-right: 90px;
     }
 
     #span-search > #span-input > #bloom{
@@ -367,7 +367,7 @@ header > #div-imgs{
     }
 
     #span-search > #span-input{
-        box-shadow: 2px 2px 6px black; border-radius: 10px; display: flex; background-color: transparent; padding-right: 3px;
+        box-shadow: 2px 2px 6px black; border-radius: 10px; display: flex; background-color: transparent; padding-right: 3px; width: 125px; height: 20px;
     }
 
     #first-hr{
