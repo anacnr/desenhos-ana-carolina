@@ -4,10 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
-html, body{
-    width: 100vw; height: 100vh;
-}
-
 :root{
 --font : 'Lora' , sans-serif;
 --color_font_footer : rgb(240, 220, 212);
@@ -212,7 +208,7 @@ header > #div-imgs{
     }
 
     #span-search{
-        display: flex; justify-content:flex-end; align-items: center; flex-flow: row nowrap; margin-top: 25px;
+        display: flex; justify-content: end; align-items: center; flex-flow: row wrap; border: 1px solid rgb(64, 255, 0); margin-top: 25px;
     }
 
     #span-search > label{
@@ -220,15 +216,15 @@ header > #div-imgs{
     }
 
     #span-search > #span-input > #input-year{
-        width: 120px; border: none; background-color: rgba(128, 128, 128, 0.475); border-radius: 10px; flex: 0 1 120px; margin-right: 90px;
+        width: 100%; border: none; background-color: rgba(128, 128, 128, 0.475); border-radius: 10px; flex: 0 1 120px; padding-top: 1px;
     }
 
     #span-search > #span-input > #bloom{
-        color: rgb(7, 102, 7); font-size: 20px; padding-top: 2px;
+        color: rgb(7, 102, 7); font-size: 20px; padding-top: 1px; padding-bottom: 1px;
     }
 
     #span-search > #span-input{
-        box-shadow: 2px 2px 6px black; border-radius: 10px; display: flex; background-color: transparent; padding-right: 3px; width: 125px; height: 20px;
+        box-shadow: 2px 2px 6px black; border-radius: 10px; display: flex; background-color: transparent; padding-right: 3px; width: 125px; margin-right: 10%; height: 20px;
     }
 
     #first-hr{
@@ -354,20 +350,21 @@ header > #div-imgs{
         display: flex; justify-content:flex-end; align-items: center; flex-flow: row nowrap; margin-top: 25px;
     }
 
+
     #span-search > label{
     color: rgb(12, 0, 10); font-size: 1.5rem; padding-right: 10px; 
     }
 
     #span-search > #span-input > #input-year{
-        width: 120px; border: none; background-color: rgba(128, 128, 128, 0.475); border-radius: 10px; flex: 0 1 120px; margin-right: 90px;
+        width: 100%; border: none; background-color: rgba(128, 128, 128, 0.475); border-radius: 10px; flex: 0 1 120px; padding-top: 1px;
     }
 
     #span-search > #span-input > #bloom{
-        color: rgb(7, 102, 7); font-size: 20px; padding-top: 2px;
+        color: rgb(7, 102, 7); font-size: 20px; padding-top: 1px; padding-bottom: 1px;
     }
 
     #span-search > #span-input{
-        box-shadow: 2px 2px 6px black; border-radius: 10px; display: flex; background-color: transparent; padding-right: 3px; width: 125px; height: 20px;
+        box-shadow: 2px 2px 6px black; border-radius: 10px; display: flex; background-color: transparent; padding-right: 3px; width: 125px; margin-right: 10%; height: 20px;
     }
 
     #first-hr{

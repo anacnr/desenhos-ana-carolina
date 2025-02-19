@@ -11,11 +11,19 @@
 }
 
 html, body{
-    width: 100vw; height: 100vh;
+    width: 100vw; height: 100vh; overflow-x: hidden;
 }
 
 body{
     background-color: rgba(240, 239, 213, 0.128); cursor: context-menu; font-family: var(--font);
+    overflow-x: hidden; 
+}
+
+body::-webkit-scrollbar {
+    width: 8px; scroll-padding: 50px; background-color: #12131269;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #37031dac; 
 }
 
 header{
