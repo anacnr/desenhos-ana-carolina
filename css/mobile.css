@@ -104,10 +104,10 @@ input::-webkit-inner-spin-button{
     }
 
     section {
-        border: 2px solid black; display: flex; flex-flow: column wrap; margin-top: 15%; margin-bottom: 10%; 
+        display: flex; flex-flow: column wrap; margin-top: 15%; margin-bottom: 10%; 
     }
     section > #aside-descr{
-        border:1px solid red; display: flex; justify-content: center; align-items: center; 
+        display: flex; justify-content: center; align-items: center; 
     }
 
     section > #aside-descr > #description{
@@ -119,7 +119,7 @@ input::-webkit-inner-spin-button{
     }
 
     section > #div-img{
-        flex-basis: 400px; flex-shrink: 2; flex-grow: 2; border: 1px solid green; display: flex; justify-content: center; align-items: center; flex-flow: column;
+        flex-basis: 400px; flex-shrink: 2; flex-grow: 2; display: flex; justify-content: center; align-items: center; flex-flow: column;
     }
 
     section > #div-img > img {
@@ -127,7 +127,7 @@ input::-webkit-inner-spin-button{
     }
 
     section > #aside-origin{
-        border:1px solid red; display: flex; justify-content: center; align-items: center; 
+        display: flex; justify-content: center; align-items: center; 
     }
 
     section > #aside-origin > #origin{
