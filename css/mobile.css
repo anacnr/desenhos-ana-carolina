@@ -88,7 +88,7 @@ input::-webkit-inner-spin-button{
     }
 
     #span-search > #span-input > #bloom{
-        color: rgb(7, 102, 7);
+        color: rgb(7, 102, 7); cursor: pointer;
     }
 
     #span-search > #span-input{

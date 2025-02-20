@@ -14,7 +14,6 @@ bloom_button.addEventListener("click" , ()=>{
  }
  else{
     //Usar a interpolação ${}
-    console.log(`Valor do input: ${input_Year}`);
     let inputed = `year_${input_Year}`
 
     sectionElements.forEach(iten =>{
@@ -23,15 +22,17 @@ bloom_button.addEventListener("click" , ()=>{
 
         if(itenClass == inputed){
             console.log(`itenClass: ${itenClass} inputed: ${inputed}`);
+            //Desenhos pesquisados após a primeira pesquisa voltam a aparecer
+            iten.style.display = 'flex'
+            const titleDraw = iten.previousElementSibling
+            titleDraw.style.display = 'block'
         }
         else{
             //Desenhos que não são do ano inputado desaparece
             iten.style.display = 'none'  
-            //Capturar o h3 que estiver perto dessas sections
+            //Captura o h3 que estiver perto dessas sections
             const titleDraw = iten.previousElementSibling
-            titleDraw.style.display = 'none'
-
-            //A lógica está funcionando incialmente, porém após pesquisar pelo primeiro ano ao pesquisar novamente outro ano as sections perrmanecem desaparecidas.
+            titleDraw.style.display = 'none'           
         }
     })
 

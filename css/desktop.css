@@ -81,7 +81,7 @@ header > #div-imgs{
     }
 
     #span-search > #span-input > #bloom{
-        color: rgb(7, 102, 7);
+        color: rgb(7, 102, 7); cursor: pointer;
     }
 
     #span-search > #span-input{
@@ -220,7 +220,7 @@ header > #div-imgs{
     }
 
     #span-search > #span-input > #bloom{
-        color: rgb(7, 102, 7); font-size: 20px; padding-top: 1px; padding-bottom: 1px;
+        color: rgb(7, 102, 7); font-size: 20px; padding-top: 1px; padding-bottom: 1px; cursor: pointer;
     }
 
     #span-search > #span-input{
@@ -359,7 +359,7 @@ header > #div-imgs{
     }
 
     #span-search > #span-input > #bloom{
-        color: rgb(7, 102, 7); font-size: 20px; padding-top: 1px; padding-bottom: 1px;
+        color: rgb(7, 102, 7); font-size: 20px; padding-top: 1px; padding-bottom: 1px; cursor: pointer;
     }
 
     #span-search > #span-input{
