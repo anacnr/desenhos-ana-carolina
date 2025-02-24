@@ -35,7 +35,6 @@ bloom_button.addEventListener("click" , ()=>{
             titleDraw.style.display = 'none'           
         }
     })
-
  }
 });//Botão de pesquisa
 
